@@ -1,11 +1,11 @@
 @font-face {
     font-family: courgette;
-    src: url("/fonts/font_courgette.woff2");
+    src: url("../fonts/font_courgette.woff2");
 }
 
 @font-face {
     font-family: PTSerif;
-    src: url("/fonts/font_PTSerif.woff2");
+    src: url("../fonts/font_PTSerif.woff2");
 }
 
 body {
@@ -23,7 +23,7 @@ h2 {
     font-size: 1.5rem;
     font-family: PTSerif;
     background-color: #FEE4DA;
-    width: 30rem;
+    max-width: 30rem;
     padding: 1rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -36,7 +36,7 @@ p {
     font-size: 1.05rem;
     font-family: PTSerif;
     background-color: #FEE4DA;
-    width: 30rem;
+    max-width: 30rem;
     padding: 1rem;
     border: 0.1rem solid black;
 
@@ -83,7 +83,7 @@ nav {
     display: flex;
     flex-flow: column-reverse wrap;
     justify-content: flex-start;
-    align-items: middle;
+    align-items: stretch;
     gap: 1rem;
 }
 
@@ -97,7 +97,6 @@ nav {
 #search-button img {
     width: 2rem;
 }
-
 
 #links {
     display: none;

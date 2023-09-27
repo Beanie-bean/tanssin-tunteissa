@@ -9,7 +9,6 @@
 }
 
 body {
-    background: rgb(239, 158, 129);
     background-image: linear-gradient(0deg, rgba(239, 158, 129, 1) 0%, rgba(255, 255, 255, 1) 65%, rgba(228, 199, 189, 1) 100%);
     background-attachment: fixed
 }
@@ -22,25 +21,20 @@ body {
 h2 {
     font-size: 1.5rem;
     font-family: PTSerif;
-    background-color: #FEE4DA;
+    text-align: center;
     max-width: 30rem;
     padding: 1rem;
     margin-bottom: 2rem;
-    text-align: center;
+    background-color: #FEE4DA;
     border: 0.1rem solid black;
-
     border-radius: 10px;
 }
 
-p {
+
+p,
+input {
     font-size: 1.05rem;
     font-family: PTSerif;
-    background-color: #FEE4DA;
-    max-width: 30rem;
-    padding: 1rem;
-    border: 0.1rem solid black;
-
-    border-radius: 10px;
 }
 
 a {
@@ -51,46 +45,55 @@ a {
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    max-width: calc(100% - 2rem);
+    margin: auto;
+    gap: 1rem;
 }
 
 header img {
-    width: 8rem;
-    height: 8rem;
-    margin-right: auto;
-    padding: 1.5rem 1rem;
+    width: 18vw;
+    height: 18vw;
+    margin: 1rem 0rem;
     filter: drop-shadow(0 0 0.2rem black);
 }
 
-header h1 {
-    font-family: courgette;
-    font-size: 2.5rem;
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+header div h1 {
     text-align: center;
-    padding: 0.5rem;
-    background-color: #E7BEB0;
+    white-space: nowrap;
+    font-family: courgette;
+    font-size: 5vw;
+    padding: 1rem 2rem;
     border-radius: 10px;
-    margin-right: auto;
     border: 0.1rem solid black;
+    background-color: #E7BEB0;
 }
 
 nav {
-    background-color: #E7BEB0;
-    padding: 0.5rem 1rem;
-    border-width: 0.1rem;
-    border-color: black;
-    border-top-style: solid;
-    border-bottom-style: solid;
     display: flex;
     flex-flow: column-reverse wrap;
     justify-content: flex-start;
     align-items: stretch;
+    padding: 0.5rem 1rem;
     gap: 1rem;
+    border-width: 0.1rem;
+    border-color: black;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    background-color: #E7BEB0;
 }
 
 #dropdown-button,
 #search-button {
-    border: 0.1rem solid black;
     cursor: pointer;
+    border: 0.1rem solid black;
 }
 
 #dropdown-button img,
@@ -100,26 +103,25 @@ nav {
 
 #links {
     display: none;
-    justify-content: flex-start;
-    gap: 1rem;
     flex-flow: column wrap;
     align-items: stretch;
+    justify-content: flex-start;
+    gap: 1rem;
 }
 
 #links a {
     font-size: 1.5rem;
     color: black;
     padding: 0 2rem;
-    background-color: #FEE4DA;
     border: 0.1rem solid black;
-    
+    background-color: #FEE4DA;
 }
 
 #search-field {
     flex-grow: 1;
     max-width: 100%;
-    border: 0.1rem solid black;
     padding: 0 0.5rem;
+    border: 0.1rem solid black;
 }
 
 #search {
@@ -132,42 +134,51 @@ nav {
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 3rem;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     max-width: calc(100% - 5rem);
     margin: 2rem auto;
+    gap: 3rem;
+}
+
+section p {
+    max-width: 30rem;
+    padding: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 10px;
+    background-color: #FEE4DA;
 }
 
 section {
     display: flex;
     flex-flow: column wrap;
-    
+}
+
+aside {
+    max-width: 30rem;
 }
 
 aside img {
-    width: 30rem;
-    border: 0.1rem solid black;
-    border-width: 0.5rem;
-    border-color: #E7BEB0;
+    box-sizing: border-box;
+    width: 100%;
+    border: 0.5rem solid #E7BEB0;
     filter: drop-shadow(0 0 0.2rem black);
-    
 }
 
 .show {
     display: flex !important;
 }
+
 @media screen and (min-width: 880px) {
-    
+
     #search-field {
         max-width: 15rem;
     }
-    
+
     #links {
         display: flex;
         flex-flow: row nowrap;
-        
     }
 
     nav {
@@ -179,12 +190,13 @@ aside img {
     }
 
     header img {
-        width: 13rem;
-        height: 13rem;
+        width: 11rem;
+        height: 11rem;
     }
-    
-    header h1 {
-        font-size: 3.5rem;
-        padding: 1.5rem 5rem;
+
+    header div h1 {
+        font-size: 3rem;
+        padding: 1.5rem 4rem;
+        width: max-content;
     }
 }

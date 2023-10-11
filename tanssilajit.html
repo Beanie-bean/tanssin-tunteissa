@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Tanssi aiheinen sivu">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tanssilajit.css">
+    <script defer src="js/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <title>Tanssin Tunteissa</title>
 </head>
+
 <body>
-    
+    <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="Sivun logo">
+        </a>
+        <div>
+            <h1>Tanssin Tunteissa</h1>
+        </div>
+    </header>
+    <nav>
+        <div id="links">
+            <a href="index.html">Etusivu</a>
+            <a href="merkitys.html">Tanssin merkitys</a>
+            <a style="background-color: #c8ada4;" href="#">Tanssilajit</a>
+        </div>
+        <div id="search">
+            <button id="dropdown-button">
+                <img src="images/menu.svg" alt="Menu button">
+            </button>
+            <input name="haku" id="search-field" type="search" placeholder="Hae sivulta">
+            <button id="search-button">
+                <img src="images/search.svg" alt="Search button">
+            </button>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <section>
+                <h2>Baletti</h2>
+                <p> Baletin juuret ovat renessanssin aikakaudella.
+                    Suuri osa nykypäivän tanssilajeista on kehittyneet baletin tekniikan pohjalta.
+                    Klassisessa baletissa tärkeää on esteettisyys ja itsensä esittäminen mahdollisimman sirona ja
+                    kevyenä.
+                </p>
+                <a href="baletti.html">
+                    Lisätietoa baletista
+                </a>
+            
+            </section>
+            <aside>
+                <img src="images/baletti1.jpeg" alt="Baletti kuva">
+            </aside>
+        </div>
+
+        <div class="container">
+            <section>
+
+                <h2>Moderni Tanssi</h2>
+
+                <p> Moderni tanssi syntyi baletin pohjalta ja vuosien varrella se on kehittynyt erilaisiin suuntiin.
+                    Perusajatus kaikissa on kuitenkin sama: liikkeiden vapaus ja sitä kautta syvien tunteiden
+                    ilmaiseminen.
+                </p>
+                <a href="nykytanssi.html">
+                    Lisätietoa modernista tanssista
+                </a>
+            </section>
+            <aside>
+                <img src="images/nykytanssi1.jpeg" alt="Moderni tanssi kuva">
+            </aside>
+        </div>
+    </main>
 </body>
+
 </html>

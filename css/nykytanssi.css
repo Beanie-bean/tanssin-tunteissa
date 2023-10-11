@@ -1,0 +1,41 @@
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: calc(100% - 5rem);
+    margin: 2rem auto;
+    gap: 3rem;
+}
+
+section h2 {
+    max-width: 30rem;
+    padding: 1rem;
+}
+
+section p {
+    max-width: 30rem;
+    padding: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 10px;
+    background-color: #FEE4DA;
+}
+
+section {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+}
+
+aside {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 30rem;
+    gap: 3rem;
+}
+
+aside img {
+    box-sizing: border-box;
+    width: 100%;
+    border: 0.5rem solid #E7BEB0;
+    filter: drop-shadow(0 0 0.2rem black);
+}

@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tanssi aiheinen sivu">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/etusivu.css">
+    <link rel="stylesheet" href="css/hakutulokset.css">
     <script defer src="js/main.js"></script>
+    <script defer src="js/haku.js"></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <title>Tanssin Tunteissa</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html"> 
+        <a id="logoLinkki" href="index.html"> 
             <img src="images/logo.png" alt="Sivun logo">
         </a>
         <div>
@@ -23,7 +24,7 @@
     </header>
     <nav>
         <div id="links">
-            <a style="background-color: #c8ada4;" href="#">Etusivu</a>
+            <a href="index.html">Etusivu</a>
             <a href="merkitys.html">Tanssin merkitys</a>
             <a href="tanssilajit.html">Tanssilajit</a>
         </div>
@@ -38,23 +39,12 @@
         </div>
     </nav>
     <main>
-        <section>
-            <h2>Mitä tanssi on?</h2>
-            <p>Tanssi on sekä taidetta että liikuntaa. Yleinen määritelmä tanssista on se, että tanssiessa liikutetaan
-                kehoa
-                tiettyyn rytmiin yleensä musiikin tahtiin. Esittävänä taiteena tanssi on kaunista katsottavaa, mutta se
-                on
-                myös
-                monipuolista liikuntaa. <br> <br>Tanssi, kuten kaikki muutkin liikuntalajit edistävät ihmisen fyysistä
-                ja
-                psyykkistä
-                terveyttä. Tanssilla on kuitenkin syvempi vaikutus ihmiseen. Jokaisella ihmisellä on oma uniikki
-                tanssityylinsä, joka on osa tanssijan identiteettiä. Tanssiessa ollaan läsnä omassa kehossa ja pystytään
-                irtaantumaan muusta maailmasta. </p>
-        </section>
-        <aside>
-            <img src="images/esittely.jpg" alt="Tanssi kuva">
-        </aside>
+        <h2 id="hakusana">
+
+        </h2>
+        <div id="hakutulokset">
+
+        </div>
     </main>
 </body>
 

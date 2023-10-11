@@ -1,0 +1,32 @@
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(100% - 5rem);
+    margin: 2rem auto;
+    gap: 2rem;
+}
+
+h2 {
+    max-width: 30rem;
+    padding: 1rem;
+}
+
+#hakutulokset {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+
+#hakutulokset a {
+    max-width: 30rem;
+    padding: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 10px;
+    background-color: #FEE4DA;
+}
+
+b {
+    font-weight: bold;
+}
